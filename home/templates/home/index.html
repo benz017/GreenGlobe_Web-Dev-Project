@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Green Globe</title>
+  {% load staticfiles %}
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/t-icon.png' %}" rel="icon" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link type="text/css" href="{% static '/css/lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static '/css/lib/font/css/font.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static '/css/lib/icons/css/icons.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static '/css/lib/icons/css/icons.css' %}" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link type="text/css" href="{% static 'css/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'css/lib/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+  <link type="text/css" href="{% static '/css/style.css' %}" rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+  <script src="{% static 'js/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'js/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'js/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/lib/bootstrap/js/popper.min.js' %}"></script>
+  <script src="{% static 'js/lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/lib/easy/easy.min.js' %}"></script>
+  <script src="{% static 'js/lib/wall/wall.min.js' %}"></script>
+  <script src="{% static 'js/lib/sf/hover.js' %}"></script>
+  <script src="{% static 'js/lib/sf/sf.min.js' %}"></script>
+
+   <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'js/form/form.js' %}"></script>
+
+
+
+</head>
+
+<body>
+    {% block body %}
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left navlogo">
+          <a href="#intro" class="scrollto"><img src="/static/img/navlogo.png" alt="Green Globe Logo" title="Green Globe" class="navbar-brand"></a>
+        <h1><a href="#intro" class="scrollto"><b>Green Globe</b></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#Catalogue">Service-catalogue</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <div class="product-screens">
+
+      <div class="product-screen-1 wall fadeIn" data-wall-delay="0.2s" data-wall-duration="0.6s">
+        <picture>
+          <source srcset="/static/img/tr-12.png" media="(max-height:775px)">
+          <img src="/static/img/p1L.png" alt="">
+        </picture>
+
+      </div>
+
+      <div class="product-screen-2 wall fadeInUp" data-wall-delay="0.6s" data-wall-duration="0.6s">
+        <picture>
+          <source srcset="/static/img/intro-31.png" media="(min-width:976px)"/>
+          <source srcset="/static/img/intro-4.png" media="(min-width:420px)">
+          <source srcset="/static/img/intro-5.png" media="(min-width:340px)">
+          <img src="/static/img/intro-6.png" alt="default">
+        </picture>
+      </div>
+
+      <div class="product-screen-3 wall fadeIn" data-wall-delay="0.2s" data-wall-duration="0.6s">
+        <picture>
+          <source srcset="/static/img/tr.png" media="(max-height:775px)">
+          <img src="/static/img/p3L.png" alt="">
+        </picture>
+      </div>
+
+    </div>
+      <div class="intro-text">
+      <h2>Welcome to Green Globe</h2>
+      <p>..Revolutionizing the Status-Quo..</p>
+      <a href="#about" class="btn-get-started scrollto">Go Live</a>
+    </div>
+
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">About Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+           We are an Idea, and ideas are bullet-proof.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 about-img wall fadeInLeft">
+            <img src="/static/img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content wall fadeInRight">
+            <h2><b>Our Story</b></h2>
+            
+            <p>
+              Although the story started in the beginning of the 20<sup>th</sup> Century with the increased usage of plastics and growing pollution in our lands, air and above, its only since the last few decades of it we started taking the criticality of it seriously. And with the '21<sup>st</sup> Century Breakdown', we could see people and communities rising for bringing earth back to greener and pollution free place to live.
+            </p>
+			<h3><b>We here come with an idea to promote an initiative towards a greener earth in order to make it a better place to live in.</b></h3>
+          </div>
+		  <div class="col-lg-6 content wall fadeInLeft">
+            <h2><b>Our Idea</b></h2>
+            
+            
+            <ul class="idea">
+              <li><i class="ion-android-checkmark-circle"></i> We are <b>not raising funds</b> from public or government to work towards our goal for a geener earth.</li>
+              <li><i class="ion-android-checkmark-circle"></i> We are bringing you a completely new medium of advertisement by providing your Ads on <b>eco-friendly bio-degradable</b> paper cups.</li>
+              <li><i class="ion-android-checkmark-circle"></i> We put our efforts in <b>analytically targeting</b> your Ads in places where it is most required according to the service you choose.</li>
+			  <li><i class="ion-android-checkmark-circle"></i> We also provide mass-enlightening <b>on-the-go campaigns</b> for promoting your product or company.</li>
+			  <li><i class="ion-android-checkmark-circle"></i> We provide <b>fealty membership</b> for certain services you choose.</li>
+			  <li><i class="ion-android-checkmark-circle"></i> We use <b>20%</b> of the Gross Profit from every client into environmental initiatives.</li>
+			  
+			</ul>
+            
+          </div>
+		  <div class="col-lg-6 about-img wall fadeInRight">
+            <img src="/static/img/about-img-1.jpg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Product Featuress Section
+    ============================-->
+    <section id="features">
+      <div class="container">
+	  <div class="row">
+	  <div class="col-lg-12 col-lg-12">
+            <div class="section-header wall fadeIn" data-wall-duration="1s">
+              <h3 class="section-title">Product Features</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+			</div>
+			 <div class="row">
+	  <div class="col-lg-12 col-lg-12"><br></br></p>
+	  </div></div>
+	  		
+
+
+        <div class="row">
+
+         
+
+          <div class="col-lg-4 col-md-4 ">
+
+            <div class="row">
+
+              <div class="col-lg-12 col-md-12 box wall fadeInLeft pf">
+                <!--<div class="icon"><i class="ion-ios-speedometer-outline"></i></div>-->
+                 <img src="/static/img/time.png">
+                <h4 class="title"><a href=""><b>Pristine</b></a></h4>
+                <p class="description"> <b>New</b> and almost <b>untouched</b> marketing channel.</p>
+              </div>
+              <div class="col-lg-12 col-md-12 box wall fadeInLeft pf" data-wall-delay="0.1s">
+                <img src="/static/img/greentech.png">
+                <h4 class="title"><a href=""><b>Ecological Solution</b></a></h4>
+                <p class="description">We choose the thin line between <b>marketing</b> and <b>eco-friendly future</b>,i.e., a solution by providing Ads through <b>biodegradable mediums</b>, promoting our greater goal.</p>
+              </div>
+                <div class="col-lg-12 col-md-12 box wall fadeInLeft pf" data-wall-delay="0.2s">
+                <img src="/static/img/bar-chart.png">
+                <h4 class="title"><a href=""><b>Value</b></a></h4>
+                <p class="description">Our <b>collaboration with NGOs</b> not only promotes our cause, but it also <b>creates a value</b> in the Ads we provide.</p>
+                </div>
+			  </div>
+			 </div> 
+          <div class="col-lg-4 col-md-4 features-img">
+            <img id='pfroad' src="/static/img/road1.jpg" alt="" class="wall fadeIn" data-wall-delay="0.3s">
+          </div>
+			<div class="col-lg-4 col-md-4 ">
+			<div class="row">
+              <div class="col-lg-12 col-md-12 box wall fadeInRight pf" data-wall-delay="0.1s">
+                <img src="/static/img/expensive.png">
+                <h4 class="title"><a href=""><b>Cost-Efficient</b></a></h4>
+                <p class="description">Do you mind investing in a <b>cheaper</b> and much more <b>effective mode</b> of marketing? </p>
+              </div>
+			    <div class="col-lg-12 col-md-12 box wall fadeInRight pf" data-wall-delay="0.2s">
+                <img src="/static/img/goal.png">
+                <h4 class="title"><a href=""><b>Analytically Targeted</b></a></h4>
+                <p class="description">We use statistics of our <b>clients market & sales reach</b>, and <b>target our Ads</b> from the analysis acquired by our personnel.</p>
+              </div>
+			    <div class="col-lg-12 col-md-12 box wall fadeInRight pf" data-wall-delay="0.3s">
+               <img src="/static/img/vib.png" alt="">
+                <h4 class="title"><a href=""><b>V-I-B-G-Y-O-R</b></a></h4>
+                <p class="description">We provide you with a range of <b>7</b> different <b>services</b> to choose the one best for you.</p>
+              </div>
+			  </div>
+			  </div>
+			 <div class="col-lg-12 col-md-12 "> 
+			  
+			    <div class="col-lg-12 col-md-12 box wall fadeInUp pf" data-wall-delay="0.3s">
+                <img src="/static/img/prize.png">
+                <h4 class="title"><a href=""><b>Client Fealty</b></a></h4>
+                <p class="description">We provide our client with <b>loyalty services</b> for choosing from our <b>fealty membership</b> services from the service catalogue.</p>
+              </div>
+			  </div>
+			</div>
+          </div>
+    </section><!-- #features -->
+
+
+    <!--==========================
+      Catalogue Section
+    ============================-->
+    <section id="Catalogue" class="section-bg">
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h3 class="section-title">Service Catalogue</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Choose from the wide range of services we are offering.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box wall vbox fadeInLeft ">
+              
+              <h4 class="v">V<sup>iolet</sup></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Analytically targeted Advertisement </li>
+                <li><i class="ion-android-checkmark-circle"></i> Full-scale campaigning </li>
+                <li><i class="ion-android-checkmark-circle"></i> *Fealty Membership </li>
+              </ul>
+              <!--a href="#" class="get-started-btn">Get Started</a-->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box ibox wall fadeInDown ">
+              
+              <h4 class="i">I<sup>ndigo</sup></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Analytically targeted Advertisement </li>
+                <li><i class="ion-android-checkmark-circle"></i> Full-scale campaigning </li>
+			
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box wall bbox fadeInRight ">
+              <h4 class="b">B<sup>lue</sup></h4>
+              <ul>
+               <li><i class="ion-android-checkmark-circle"></i> Analytically targeted Advertisement </li>
+			 
+                
+              </ul>
+
+            </div>
+          </div>
+		   <div class="col-lg-4 col-md-6">
+            <div class="box wall gbox fadeInLeft ">
+              
+              <h4 class="g">G<sup>reen</sup></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Analytically targeted Advertisement </li>
+                <li><i class="ion-android-checkmark-circle"></i> *Fealty Membership </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box ybox wall fadeInUp ">
+              
+              <h4 class="y">Y<sup>ellow</sup></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Targeted advertisment in 5 states of your choice </li>
+                
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box wall obox fadeInRight ">
+              <h4 class="o">O<sup>range</sup></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Targeted advertisment in 3 states of your choice </li>
+              </ul>
+
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+		  </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="box rbox wall fadeInUp ">
+              
+              <h4 class="r">R<sup>ed</sup></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Targeted advertisment in 1 state of your choice </li>
+              </ul>
+
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+		  </div>
+
+        </div>
+      </div>
+    </section><!-- #Catalogue -->
+
+
+    <!--==========================
+      FAQ Section
+    ============================-->
+    <section id="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Frequently Asked Questions</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">"Curiosity is the engine of achievement."</p>
+        </div>
+
+        <ul id="faq-list" class="wall fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">What is Green Globe? <i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>
+                Green Globe is not just an advertising medium, it is an initiative, taken to help our Earth become <b>cleaner</b> and <b>greener</b> place to live in.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Our Vision? <i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                Like our vision statement <b>"Revolutionizing the Status-Quo"</b>, we want to manage the current state of  affairs of pollution created by us daily all over and reduce it to the lowest possible criticality level.
+				
+				<br><br>Furthermore, with growing revenue, we  want to extend it into every part of India and look into every environmental issues faced by us, one after another, and live upto our name Green Globe.</br></br>
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Want to advertise your company or your product/offers?<i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+               Enough of digital marketing and enough of leaflets and poster distribution all around. Its time. Time for a <b>new era of advertising</b>. Use eco-friendly, disposable, NGO approved papercups for your advertising.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">How do we work?<i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                Interested in our work. For further information go to <b>Contact Us</b> and contact us. Our representative will fix an apointment with you to present you with our portfolio and "What's in it for you?" session.
+				<br><br>WE won't disappoint you</br></br>
+              </p>
+            </div>
+          </li>
+
+          
+
+        </ul>
+
+      </div>
+    </section><!-- #faq -->
+
+    <!--==========================
+     Team Section
+    ============================
+    <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Our Team</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row wall fadeInUp">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-1.jpg" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-2.jpg" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <section id="gallery">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Gallery</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">"Art, freedom and creativity will change society faster than politics."</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wall fadeInUp">
+              <a href="/static/img/gallery/gallery-1.jpg" class="gallery-popup">
+                <img src="/static/img/gallery/gallery-1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wall fadeInUp">
+              <a href="/static/img/gallery/gallery-2.jpg" class="gallery-popup">
+                <img src="/static/img/gallery/gallery-2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wall fadeInUp">
+              <a href="/static/img/gallery/gallery-3.jpg" class="gallery-popup">
+                <img src="/static/img/gallery/gallery-3.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wall fadeInUp">
+              <a href="/static/img/gallery/gallery-4.jpg" class="gallery-popup">
+                <img src="/static/img/gallery/gallery-4.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wall fadeInUp">
+              <a href="/static/img/gallery/gallery-5.jpg" class="gallery-popup">
+                <img src="/static/img/gallery/gallery-5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wall fadeInUp">
+              <a href="/static/img/gallery/gallery-6.jpg" class="gallery-popup">
+                <img src="/static/img/gallery/gallery-6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #gallery -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wall fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3><b>Green Globe</b></h3>
+              <p><i>"Revolutionizing the Status-Quo"</i><br><b>We are not just an advertising company.<br>We are an initiative.</br><br>Support Us.</br></b>
+			  </br></p>
+              <div class="social-links">
+                <!--a href="#" class="twitter"><i class="fa fa-twitter"></i></a-->
+                <a href="https://www.facebook.com/greenglobe.live/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://goo.gl/bqWeYs" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://goo.gl/uN9dQH" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <!--a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>H.N. Halli Lake Road, Radha Reddy Layout<br>Karnataka,Bengaluru-560035</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>greenglobe.live@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+91-7980468742</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="." method="POST" role="form" id='form' data-url='{{ request.build_absolute_uri|safe }}' data-toggle="modal" onsubmit="return validateForm()">
+                {% csrf_token %}
+
+                  <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Fullname" data-rule="minlen:4,required" data-msg="Please enter at least 4 chars" required />
+                    <div class="error-text small" id="name_error"><strong></strong></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email,required" data-msg="Please enter a valid email" required/>
+                    <div class="error-text small" id="error_mail"><strong></strong></div>
+
+                  </div>
+                  </div>
+                  <div class="form-group" >
+                  <input type="text" class="form-control" name="contact_number" id="contact_number" placeholder="Contact Number" data-rule="minlen:10" data-msg="Please enter at least 10 digit number" />
+                  <div class="error-text small" id="error_number" ><strong></strong></div>
+                  </div>
+                  <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" id="message" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
+                  <div class="" ></div>
+                  </div>
+                  <div class="text-center">
+                    <!-- button with onclick event that triggers the form validation. If the form is valid, triggers click of second button -->
+
+                    <button type="button" value="Submit" title="Send Message" name="submit" id="submit_btn" onclick="if(validateForm())$('#triggerModal').click();">Send Message</button>
+
+                    <!-- hidden submit button -->
+
+                    <button type="submit" id="triggerModal" hidden value="Submit" class="btn btn-info btn-lg " data-toggle="modal" data-target="#myModal"></button>
+                  </div>
+              </form>
+            </div>
+
+          </div>
+            <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-body">
+         <div class="container">
+	        <div class="row">
+		        <div id="loader">
+    		    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="lading"></div>
+		        </div>
+                <h3 id="modalTextError"></h3>
+	        </div>
+        </div>
+      </div>
+      <h3 class="loading" id="modalText" ><b>Sending</b></h3>
+      <button type="button" hidden class="btn btn-ar btn-default" id="cancel-btn" data-dismiss="modal">
+  </div>
+</div>
+
+</div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+
+
+    {% endblock %}
+</body>
+
+</html>
