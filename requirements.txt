@@ -1,8 +1,6 @@
-pipBabel==2.6.0
 bcrypt==3.1.4
 boto==2.49.0
 certifi==2018.8.24
-cffi==1.11.5
 chardet==3.0.4
 Django==2.0.7
 django-acme==0.2.4
@@ -14,12 +12,10 @@ django-filter==2.0.0
 django-mailgun==0.9.1
 django-phonenumber-field==2.0.0
 django-ses==0.8.6
-django-ses-gateway==0.1.1
 djangorestframework==3.8.2
 future==0.16.0
 gunicorn==19.9.0
 idna==2.7
-lxml==4.2.5
 Markdown==2.6.11
 phonenumberslite==8.9.10
 pycparser==2.19
