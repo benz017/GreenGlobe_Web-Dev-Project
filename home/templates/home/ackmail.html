@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900" rel="stylesheet" type='text/css'/>
+  <title>{{ subject }}</title>
+  {% load staticfiles %}
+  <style type="text/css">
+  /* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  body {
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   margin:0 !important;
+   width: 100% !important;
+   -webkit-text-size-adjust: 100% !important;
+   -ms-text-size-adjust: 100% !important;
+   -webkit-font-smoothing: antialiased !important;
+ }
+ .tableContent img {
+   border: 0 !important;
+   display: inline-block !important;
+   outline: none !important;
+ }
+
+p, h1,h2,h3,ul,ol,li,div{
+  margin:0;
+  padding:0;
+}
+h1,h2{
+  font-weight: normal;
+  background:transparent !important;
+  border:none !important;
+}
+
+td,table{
+  vertical-align: top;
+}
+td.middle{
+  vertical-align: middle;
+}
+
+a{
+  text-decoration: none;
+}
+
+a.link1{
+  font-size: 16px;
+  color: #a5a5a5;
+}
+
+a.link2{
+font-size: 18px;
+font-weight: bold;
+color: #000000;
+text-decoration: underline;
+}
+
+a.link3{
+font-size: 15px;
+font-weight: bold;
+color: #ffffff;
+background-color: #2da4a8;
+padding: 11px 15px;
+text-decoration: none;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align: center;
+display:inline-block;
+}
+
+.contentEditable li{
+
+}
+
+h1{
+font-size: 24px;
+font-weight: bold;
+color: #000000;
+line-height: 150%;
+}
+
+
+h2{
+font-size: 18px;
+font-weight: bold;
+color: #000000;
+line-height: 150%;
+height:60px;
+}
+
+p{
+font-size: 16px;
+color: #000000;
+line-height: 150%;
+text-align: left;
+}
+
+.bgItem{
+background: #ffffff;
+}
+
+.bgBody{
+background: #3f4040;
+}
+
+
+#welcome{
+  font-family:'Montserrat', sans-serif;;
+color: #FFFFFF;
+text-align:center;
+font-size: 36px;
+}
+
+
+#welcome1{
+  font-family:'Lato', sans-serif;
+color: #FFFFFF;
+text-align:center;
+font-size: 18px;
+}
+</style>
+
+<script type="colorScheme" class="swatch active">
+{
+    "name":"Default",
+    "bgBody":"3f4040",
+    "link":"555555",
+    "color":"000000",
+    "bgItem":"ffffff",
+    "title":"000000"
+}
+</script>
+</head>
+{% block body %}
+<body paddingwidth="0" paddingheight="0" class='bgBody' style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableContent bgBody" align="center"  style='font-family:Helvetica, sans-serif;'>
+    
+    
+  <tr>
+    <td align='center' class='movableContentContainer'>
+      
+    <!-- =============== START HEADER =============== -->
+      <div class='movableContent'>
+        <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" >
+          <tr>
+            <td width='400' align="left">
+              <div class="contentEditableContainer contentImageEditable">
+                <div class="contentEditable">
+                  <h2 id="greet" style="font-family:'Montserrat', sans-serif; color: #FFFFFF; text-align: center; font-size: 36px;">Hello {{ name }}</h2>
+              </div>
+              </div>
+            </td> 
+          </tr>
+        </table>
+      </div>
+
+      <div class='movableContent'>
+        <table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td>
+              <div class="contentEditableContainer contentImageEditable">
+                <div class="contentEditable" style="border:inset 6px #FFFFFF;">
+                  <img src="https://drive.google.com/uc?id=1mKlJV_UW7mWAwGAg_8opx_KQo7LdroKr" alt="Header Image" width='600' height='225' class="logo" style="vertical-align:bottom;">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="movableContent">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tbody>
+             <tr><td height='20'></td></tr>
+          <tr>
+            <td>
+              <div class="contentEditableContainer contentImageEditable">
+                <div class="contentEditable"><h3 id="welcome" style="font-family:'Montserrat', sans-serif;;color: #FFFFFF;text-align:center;font-size: 36px;">Welcomes you</h3>
+                  <h4 id="welcome1" style="font-family:'Lato', sans-serif; color: #FFFFFF; text-align:center; font-size: 18px;">Thank you for connecting with us.<br>We will get back to you ASAP.</h4>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+
+    <!-- =============== END HEADER =============== -->
+    <!-- =============== START BODY =============== -->
+      <div class='movableContent'>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td>
+              <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class='bgItem' style='border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;'>
+                <tr><td colspan="5" height='30'></td></tr>
+                <tr>
+                  <td width='20'></td>
+                  <td width='225'>
+                    <div class="contentEditableContainer contentImageEditable">
+                      <div class="contentEditable">
+                        <img src="https://research-paper.essayempire.com/wp-content/uploads/Environment-Research-Paper-Examples-200x200.jpg" alt="image" width='225' height='225' data-default="placeholder" data-max-width="150">
+                      </div>
+                    </div>
+                  </td>
+                  <td width='30'></td>
+                  <td width='305'>
+                    <div class="contentEditableContainer contentTextEditable">
+                      <div class="contentEditable">
+                        <h2 style='font-size: 24px;'>Thought of the Day</h2>
+                        <br/>
+                        <p>Try to leave the Earth a better place than when you arrived.<br><br>~ Sidney Sheldon</p>
+                        <br/><br/>
+                      </div>
+                    </div>
+                  </td>
+                  <td width='20'></td>
+                </tr>
+                <tr><td colspan="5" height='30'></td></tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+          <!-- =============== END BODY =============== -->
+    <!-- =============== START FOOTER =============== -->
+
+       <div class='movableContent'>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td height='20'></td></tr></table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class='bgItem'>
+          <tr><td height='10' bgcolor="2da4a8"></td></tr>
+          <tr>
+            <td>
+              <table  width="600" border="0" cellspacing="0" cellpadding="0" align="center" >
+                <tr><td height='30'></td></tr>
+                <tr>
+                  <td align='center'>
+                    <table width="204" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td width='68' align="center">
+                          <div class="contentEditableContainer contentFacebookEditable">
+                            <div class="contentEditable">
+                                <a href="https://www.facebook.com/greenglobe.live/" class="facebook" target="_blank"><img src="https://png.icons8.com/color/50/000000/facebook.png" alt="Facebook" data-default="placeholder" width='50' height='50'  data-max-width="50" data-customIcon="true" ></a>
+                            </div>
+                          </div>
+                        </td>
+                        <td width='68' align="center">
+                          <div class="contentEditableContainer contentTwitterEditable">
+                            <div class="contentEditable"> 
+                                <a href="https://goo.gl/bqWeYs" class="instagram" target="_blank"><img src="https://png.icons8.com/color/50/000000/instagram-new.png" alt="Instagram" data-default="placeholder" width='50' height='50' data-max-width="50" data-customIcon="true" ></a>
+                            </div>
+                          </div>
+                        </td>
+                        <td width='68' align="center">
+                          <div class="contentEditableContainer contentImageEditable">
+                            <div class="contentEditable">
+                                <a href="https://goo.gl/uN9dQH" class="google-plus" target="_blank"><img src="https://png.icons8.com/color/50/000000/google-logo.png" alt="Google Plus" width='50' height='50'  data-max-width="50"></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class='movableContent'>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class='bgItem'>
+          <tr>
+            <td>
+              <table  width="600" border="0" cellspacing="0" cellpadding="0" align="center" >
+                <tr><td height='20'></td></tr>
+                <tr>
+                  <td align='center'>
+                    <div class="contentEditableContainer contentTextEditable">
+                      <div class="contentEditable" >
+                        <p style='color:#a5a5a5;text-align:center;font-size:11px;line-height:19px;'>
+                        <a target='_blank' href="#" style='color:#a5a5a5'>Contact us</a>
+                          <br><br>
+                          Sent by Green Globe Team<br>
+                          Green Globe <br>
+                          H.N. Halli Lake Road, Radha Reddy Layout<br>
+                          Karnataka,Bengaluru-560035 <br>
+                          +91-7980-468742 <br>
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr><td height='20'></td></tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+        <!-- =============== END FOOTER =============== -->
+
+
+
+        
+    </td>
+  </tr>
+</table>
+{% endblock %}
+  </body>
+  </html>
