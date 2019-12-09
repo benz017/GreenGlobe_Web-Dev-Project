@@ -6,8 +6,8 @@
 
 2. Replace the **`< ENTER YOUR EMAIL HERE >`** and **`< ENTER YOUR EMAIL PASSWORD >`** to your Email credentials (**`GMail`**) in the **`GreenGlobe_Full-Stack-Project\docker-compose.yml`** file.  
 --- ***docker-compose.yml*** ---  
-**`- EmailID=< ENTER YOUR EMAIL HERE >`**  
-**`- Password=< ENTER YOUR EMAIL PASSWORD >`**
+**`- EmailID=< ENTER YOUR EMAIL HERE >`**                 ## Avoid whitespace  
+**`- Password=< ENTER YOUR EMAIL PASSWORD >`**            ## Avoid whitespace  
 
 3. Execute command **`docker-compose up`** in the project directory **`GreenGlobe_Full-Stack-Project.`** (Make sure you have **docker** and **docker-compose** pre-installed)
 
