@@ -20,7 +20,7 @@ Markdown==2.6.11
 phonenumberslite==8.9.10
 pycparser==2.19
 pytz==2018.5
-requests==2.20.0
+requests==2.22.0
 six==1.11.0
 urllib3==1.24.2
 virtualenv==16.0.0
