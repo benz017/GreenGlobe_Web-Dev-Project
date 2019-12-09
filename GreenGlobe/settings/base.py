@@ -28,8 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1']
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = '< ENTER YOUR EMAIL HERE >'
-EMAIL_HOST_PASSWORD = '< ENTER YOUR EMAIL PASSWORD >'
+EMAIL_HOST_USER = os.environ['EmailID']
+EMAIL_HOST_PASSWORD = os.environ['Password']
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

@@ -129,6 +129,7 @@ dmypy.json
 
 # Pyre type checker
 .idea
+bfg.jar
 .pyre/
 GreenGlobe.ini
 GreenGlobe/__pycache__/

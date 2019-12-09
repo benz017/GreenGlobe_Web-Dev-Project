@@ -9,3 +9,6 @@ services:
       - .:/Full_Stack_Project
     ports:
       - "8000:8000"
+    environment:
+      - EmailID=< ENTER YOUR EMAIL HERE >
+      - Password=< ENTER YOUR EMAIL PASSWORD >
