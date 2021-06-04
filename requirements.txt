@@ -2,7 +2,7 @@ bcrypt==3.1.4
 boto==2.49.0
 certifi==2018.8.24
 chardet==3.0.4
-Django==3.0
+Django==3.1.9
 django-acme==0.2.4
 django-acme-challenge==1.2
 django-anymail==4.3
